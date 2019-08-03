@@ -1,0 +1,340 @@
+body {
+  margin: 0 auto;
+}
+h1 {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+h2 {
+font-size: 25px;
+font-family: 'Montserrat', sans-serif;
+}
+p {
+font-family: montserrat;
+line-height: 1.7em;
+}
+p a {
+  background: linear-gradient(to right, #f61f2c 0%, #fdd000 50%, #84dc51 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-weight: 700;
+}
+p a:hover {
+  background: linear-gradient(to right, #84dc51 0%, #fdd000 50%, #f61f2c 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+::selection {
+  background: #f61f2c;
+  color: #fff;
+}
+::-moz-selection {
+  background: #f61f2c;
+  color: #fff;
+}
+h6.page-title {
+text-align: center;
+font-weight: 700;
+color: #f61f2c;
+line-height: 1em;
+margin-top: 70px;
+}
+h1.page-sub-title  {
+text-align: center;
+line-height: 1em;
+margin-bottom: 70px;
+}
+
+/* Header CSS */
+.header {
+  background-color: black;
+  padding: 10px 20px;
+}
+.spacer {
+  height: 50px;
+}
+
+.top-nav div {
+ color: white;
+ padding: 10px;
+}
+ul.top-nav {
+  list-style: none;
+}
+.social-media-nav {
+  padding-right: 10px;
+}
+.top-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-family: montserrat;
+}
+.top-nav a:hover {
+ color: grey; 
+}
+.header a.fa {
+  padding: 10px;
+  font-size: 10px;
+  min-width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+  font-family: FontAwesome;
+}
+.header .fa-facebook {
+  background: linear-gradient(to right, #f61f2c 0%, #fdd000 50%, #84dc51 100%);
+  color: black;
+  margin-right: 10px;
+}
+.header .fa-linkedin {
+  background: linear-gradient(to right, #f61f2c 0%, #fdd000 50%, #84dc51 100%);
+  color: black;
+}
+.header .fa-facebook:hover {
+  background: linear-gradient(to left, #f61f2c 0%, #fdd000 50%, #84dc51 100%);
+  color: black;
+  margin-right: 10px;
+}
+.header .fa-linkedin:hover {
+  background: linear-gradient(to left, #f61f2c 0%, #fdd000 50%, #84dc51 100%);
+  color: black;
+}
+/* Home page hero CSS */
+.hero-image {
+  background-image: url("images/jo-portfolio.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-image .header-text-left {
+max-width: 300px;
+padding-left: 20px;
+text-align: right;
+}
+.hero-image .header-text-left p, .header-text-right p {
+  background-color: #fff;
+}
+.hero-image .header-text-right {
+  max-width: 300px;
+  padding-right: 20px;
+}
+@media (max-width:900px) {
+  .hero-image .header-text-left,.header-text-right {
+    display: none;
+  }
+}
+/* Home page intro paragraphs */
+.home-intro {
+  display: flex;
+  padding: 40px 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+@media (max-width:900px) {
+  .home-intro h2, .home-intro p {
+    text-align: center;
+  }
+}
+.intro-left {
+  text-align: right;
+  width: 400px;
+  padding-right: 20px;
+  line-height: 2.2em;
+}
+.intro-right {
+  width: 400px;
+  padding-left: 20px;
+  line-height: 2.2em;
+}
+@media (max-width:900px) {
+  .intro-left, .intro-right {
+    padding: 10px 20px;
+  }
+}
+/* Morphing shapes on home page */
+.shape-wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+}
+.shape-wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+.circle-l {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px;
+  margin-right: 2px;
+}
+.square-r {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px;
+  margin-left: 2px;
+}
+@media (max-width:800px) {
+  .circle-l, .square-r {margin: 2px 0px;}
+}
+@media all and (min-width: 800px) {
+  .shape { flex: 1 0 0; }
+}
+.circle {
+  border: 15px solid #fff;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+}
+.square {
+  border: 15px solid #fff;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+}
+.shape-hyperlink a {
+text-decoration: none;
+background: linear-gradient(to right, #f61f2c 0%, #fdd000 50%, #84dc51 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.shape-hyperlink a:hover {
+  background: linear-gradient(to right, #84dc51 0%, #fdd000 50%, #f61f2c 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Portfolio items on home page */
+.portfolio-cards-home div {
+  margin-bottom: 15px;
+}
+.portfolio-home-container {
+  margin-top: 80px;
+}
+/* Portfolio Page */
+.portfolio-overlay-container {
+  position: relative;
+  width: 50%;
+}
+.portfolio-cards-main col:nth-child(even) {
+
+}
+/* Portfolio Overlay */
+.card-img-overlay {
+  background-color: #f61f2c;
+  opacity: 0;
+  transition: .5s ease;
+}
+.card-img-overlay:hover {
+  opacity: 1;
+}
+h4.portfolio-card-title {
+  color: white!important;
+  text-decoration: none;
+}
+
+/* About page top section */
+.about-top-section {
+  display: flex;  
+  flex-flow: row wrap;
+}
+
+.about-top-section > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.about-left-text {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.about-right-image {
+  background-image: url("images/placeholder-about.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+}
+
+@media all and (min-width: 900px) {
+  .about-lr { flex: 1 0 0; }
+}
+@media all and (max-width: 900px) {
+  .about-left-text { order: 2; } 
+  .about-right-image { order: 1; margin-left: 0px; max-height: 400px;}
+}
+
+@media all and (min-width: 900px) {
+  .about-left-text { order: 1; } 
+  .about-right-image { order: 2; }
+}
+.about-socials .fa {
+  padding: 8px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+/* Contact Page */
+.contact-form-section {
+  height: 500px;
+  padding-top: 50px;
+  background-color: #f6f6f6;
+}
+div.contact-form  {
+  margin: auto;
+  width: 80%;
+  text-align:center;
+}
+.contact-form input, .contact-form textarea{
+  width:100%;
+  line-height:1.5;
+  margin:10px;
+  font-family:montserrat;
+  text-align:center;
+  font-size:18px;
+  border: none;
+}
+.contact-form button{
+  background-color:black;
+  color:#f61f2c;
+  border-style:none;
+  padding:20px;
+  margin:10px;
+  font-family:montserrat;
+  text-transform:uppercase;
+  font-weight:600;
+  font-size:20px;
+}
+.contact-form button:hover {
+  background-color:#f61f2c;
+  color: black;
+}
