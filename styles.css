@@ -44,8 +44,27 @@ margin-top: 70px;
 h1.page-sub-title  {
 text-align: center;
 line-height: 1em;
-margin-bottom: 70px;
+margin-bottom: 30px;
 }
+.centered-button {
+text-align: center;
+text-transform: uppercase;
+font-family: montserrat;
+font-weight: 700;
+padding: 15px 20px;
+border: none;
+background-color: #f61f2c; 
+color: black;
+margin-top: 30px;
+}
+.centered-button:hover {
+  background-color: black;
+  color: white;
+}
+.button-wrapper {
+text-align: center;
+}
+
 
 /* Header CSS */
 .header {
@@ -102,6 +121,22 @@ ul.top-nav {
   background: linear-gradient(to left, #f61f2c 0%, #fdd000 50%, #84dc51 100%);
   color: black;
 }
+/* #toggle-button {
+  background-color: white;
+} */
+
+/* Footer */
+.footer-container {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.footer-col {
+  background-color: black;
+  height: 50px;
+  color: white;
+  text-align: center;
+}
+
 /* Home page hero CSS */
 .hero-image {
   background-image: url("images/jo-portfolio.jpg");
