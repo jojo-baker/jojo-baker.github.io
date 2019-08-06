@@ -13,31 +13,36 @@
     </head>
     <body>
 <!-- Top nav -->
-     <section>
+    <section>
         <div class="container-fluid header">
             <div class="row h-100 top-nav">
-              <div class="col-md-8 col-sm-12 d-flex align-self-center justify-content-md-start justify-content-center">
-                 <ul class="nav top-nav">
-                   <li class="nav-item">
-                     <a class="nav-link active" href="index.html">Home</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="about.html">About</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="portfolio.html">Portfolio</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="contact.html">Contact</a>
-                   </li>
-                 </ul>
-              </div>
-              <div class="col d-md-flex justify-content-end align-self-center social-media-nav d-none">
-                    <ul class="nav">
-                      <li class="nav-item"><a href="#" class="fa fa-facebook"></a></li>
-                      <li class="nav-item"><a href="https://www.linkedin.com/in/bakerjo/" target="blank" class="fa fa-linkedin"></a></li>
-                   </ul>
-              </div>
+              <nav class="col-sm-12 d-flex align-self-center justify-content-md-start justify-content-end navbar navbar-expand-md navbar-dark">
+                  <button class="navbar-toggler" id="toggle-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav top-nav text-center col-md-8 pr-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                          </li>
+                        </ul>
+                        <div class="col d-md-flex justify-content-md-end text-center align-self-center social-media-nav">
+                          <ul class="nav justify-content-center">
+                              <li class="nav-item"><a href="https://www.facebook.com/jobaker83" target="_blank" class="fa fa-facebook"></a></li>
+                              <li class="nav-item"><a href="https://www.linkedin.com/in/bakerjo/" target="_blank" class="fa fa-linkedin"></a></li>
+                          </ul>
+                        </div>
+                  </div>
+              </nav>
             </div>
           </div>
     </section>
@@ -45,85 +50,145 @@
 <!-- Home hero banner -->
         <section>
             <div class="hero-image">
-                <div class="header-text-left">
+                <!-- <div class="header-text-left">
                     <h1>Lorem ipsum dolor sit amet</h1>
                     <p>Consectetur adipiscing elit. Maecenas faucibus ante massa.</p>
                 </div>
                 <div class="header-text-right">
                     <h1>Lorem ipsum dolor sit amet</h1>
                     <p>Consectetur adipiscing elit. Maecenas faucibus ante massa.</p>
-                </div>
+                </div> -->
             </div>
         </section>
 <!-- Intro text on home page -->
         <section>
          <div class="home-intro">
              <div class="intro-left">
-                <h2>Lorem ipsum dolor sit amet. Consectetur adipiscing elit. Maecenas faucibus ante massa.</h2>
+                <h2>Hello, I'm Jo Baker. I'm a graphic designer and <span class="small-h2">(hopeful)</span> web developer from Perth.</h2>
              </div>
              <div class="intro-right">
-                <p>Lorem ipsum dolor sit amet. Consectetur adipiscing elit. Maecenas faucibus ante massa. Lorem ipsum dolor sit amet. Consectetur adipiscing elit. Maecenas faucibus ante massa.</p>
+                <p>Welcome to my portfolio site! It's a work in progress. I'm looking forward to learning new tech skills and creating some items to showcase on this site!</p>
              </div>
           </div>
         </section>
 <!-- Circle and square on home page -->
-<div class="shape-wrapper">
-        <div class="shape circle-l">
-          <div class="circle"><h2 class="shape-hyperlink"><a href="about.html">about</a></h2></div>
-        </div>
-        <div class="shape square-r">
-            <div class="square"><h2 class="shape-hyperlink"><a href="#">contact</a></h2></contact></div>
-        </div>
+<section>
+    <div class="container-fluid pr-0 pl-0">
+        <div class="row no-gutters">
+              <div class="col-md-6 col-12 shapes pr-md-1 pb-1">
+                    <a href="about.html">
+                        <div class="circle-wrapper d-flex justify-content-center align-items-center">
+                              <div class="circle d-flex justify-content-center align-items-center">
+                                <h2 class="shape-hyperlink">read <br>about me.</h2>
+                              </div>
+                        </div>
+                    </a>
+                        </div>
+              <div class="col-md-6 col-12 shapes">
+                    <a href="contact.html" class="shape-hyperlink">
+                        <div class="square-wrapper d-flex justify-content-center align-items-center">
+                              <div class="square d-flex justify-content-center align-items-center">
+                                <div class="square-inside"><h2 class="shape-hyperlink">contact <br>me.</h2></div>
+                              </div>
+                        </div>
+                    </a>
+              </div>
         </div>
       </div>
+</section>
 
 <!-- Portfolio section -->
 <section>
- <!-- Card Container Start -->   
- <div class="container portfolio-home-container">
-    <div class="row portfolio-cards-home justify-content-center">
-  <!-- Card -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card">
-          <img src="images/placeholder.jpg" class="card-img-top">
-          <div class="card-body">
-            <h3 class="card-title">Title of the Portfolio Item</h3>
-            <p>skdj fnjs dbfjs dnfsd jfb sdjfh bsdjh fbsdj fbsdjhf</p>
-            <a href="#" class="card-link">Link here >></a>
+  <div class="spacer"></div>
+  <h1 class="page-sub-title">Recent Projects</h1>
+  <!-- Card Container Start -->   
+  <div class="container portfolio-main-container">
+     <!-- Row Start -->  
+      <div class="row portfolio-cards-main no-gutters">
+   <!-- Card -->
+   <div class="col-md-3 col-6 text-white d-flex justify-content-center">
+          <a href="#" class="portfolio-link">
+          <div class="card">
+            <img src="images/placeholder-square.png" class="card-img">
+            <div class="card-img-overlay d-flex text-center justify-content-center">
+                  <div class="my-auto mx-auto text-center">  
+                  <h4 class="card-title portfolio-card-title">A Headline.</h4>
+                  </div>
+            </div>
           </div>
-        </div>
-      </div>
+           </a>
+  </div>
    <!-- Card End -->
    <!-- Card -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card">
-          <img src="images/placeholder.jpg" class="card-img-top">
-          <div class="card-body">
-            <h3 class="card-title">Title of the Portfolio Item</h3>
-            <p>skdj fnjs dbfjs dnfsd jfb sdjfh bsdjh fbsdj fbsdjhf</p>
-            <a href="#" class="card-link">Link here >></a>
+   <div class="col-md-3 col-6 text-white d-flex justify-content-center">
+          <a href="#" class="portfolio-link">
+          <div class="card">
+            <img src="images/placeholder-square.png" class="card-img">
+            <div class="card-img-overlay d-flex text-center justify-content-center">
+                  <div class="my-auto mx-auto text-center">  
+                  <h4 class="card-title portfolio-card-title">A Headline.</h4>
+                  </div>
+            </div>
           </div>
-        </div>
-      </div>
-  <!-- Card End -->
-  <!-- Card -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card">
-          <img src="images/placeholder.jpg" class="card-img-top">
-          <div class="card-body">
-            <h3 class="card-title">Title of the Portfolio Item</h3>
-            <p>skdj fnjs dbfjs dnfsd jfb sdjfh bsdjh fbsdj fbsdjhf</p>
-            <a href="#" class="card-link">Link here >></a>
-          </div>
-        </div>
-      </div>
-  <!-- Card End -->    
-    </div>
+           </a>
   </div>
-  <!-- Container End -->  
-</section>
-<!-- Footer section -->
+   <!-- Card End -->
+   <!-- Card -->
+   <div class="col-md-3 col-6 text-white d-flex justify-content-center">
+          <a href="#" class="portfolio-link">
+          <div class="card">
+            <img src="images/placeholder-square.png" class="card-img">
+            <div class="card-img-overlay d-flex text-center justify-content-center">
+                  <div class="my-auto mx-auto text-center">  
+                  <h4 class="card-title portfolio-card-title">A Headline.</h4>
+                  </div>
+            </div>
+          </div>
+           </a>
+  </div>
+   <!-- Card End -->
+   <!-- Card -->
+   <div class="col-md-3 col-6 text-white d-flex justify-content-center">
+          <a href="#" class="portfolio-link">
+          <div class="card">
+            <img src="images/placeholder-square.png" class="card-img">
+            <div class="card-img-overlay d-flex text-center justify-content-center">
+                  <div class="my-auto mx-auto text-center">  
+                  <h4 class="card-title portfolio-card-title">A Headline.</h4>
+                  </div>
+            </div>
+          </div>
+           </a>
+  </div>
+   <!-- Card End -->
+    <!-- Row End -->
+     </div>
 
+   <!-- Container End -->
+  </div>
+  <div class="button-wrapper">
+    <a href="portfolio.html"><button class="centered-button">See all.</button></a>
+  </div>
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer section -->
+<div class="container footer-container align-items-center">
+  <div class="row">
+    <div class="col footer-col">© JO BAKER 2019. ALL RIGHTS RESERVED.</div>
+  </div>
+</div>
+
+<!-- Bootstrap Javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
