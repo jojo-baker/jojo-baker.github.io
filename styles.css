@@ -44,11 +44,10 @@ margin-top: 70px;
 h1.page-sub-title  {
 text-align: center;
 line-height: 1em;
-margin-bottom: 30px;
+margin-bottom: 70px;
 }
 .centered-button {
 text-align: center;
-text-transform: uppercase;
 font-family: montserrat;
 font-weight: 700;
 padding: 15px 20px;
@@ -60,11 +59,18 @@ margin-top: 30px;
 .centered-button:hover {
   background-color: black;
   color: white;
+  cursor: pointer;
+}
+.centered-button a:hover {
+  cursor: pointer;
 }
 .button-wrapper {
 text-align: center;
 }
-
+.small-h2 {
+  font-size: 20px;
+  color: grey;
+}
 
 /* Header CSS */
 .header {
@@ -72,9 +78,8 @@ text-align: center;
   padding: 10px 20px;
 }
 .spacer {
-  height: 50px;
+  height: 70px;
 }
-
 .top-nav div {
  color: white;
  padding: 10px;
@@ -121,9 +126,6 @@ ul.top-nav {
   background: linear-gradient(to left, #f61f2c 0%, #fdd000 50%, #84dc51 100%);
   color: black;
 }
-/* #toggle-button {
-  background-color: white;
-} */
 
 /* Footer */
 .footer-container {
@@ -131,10 +133,8 @@ ul.top-nav {
   margin-bottom: 20px;
 }
 .footer-col {
-  background-color: black;
-  height: 50px;
-  color: white;
   text-align: center;
+  font-size: 10px;
 }
 
 /* Home page hero CSS */
@@ -185,12 +185,16 @@ text-align: right;
   text-align: right;
   width: 400px;
   padding-right: 20px;
-  line-height: 2.2em;
+}
+.intro-left h2 {
+  line-height: 1.4em;
 }
 .intro-right {
   width: 400px;
   padding-left: 20px;
-  line-height: 2.2em;
+}
+.intro-right p {
+  line-height: 1.5em;
 }
 @media (max-width:900px) {
   .intro-left, .intro-right {
@@ -198,63 +202,50 @@ text-align: right;
   }
 }
 /* Morphing shapes on home page */
-.shape-wrapper {
-  display: flex;  
-  flex-flow: row wrap;
-}
-.shape-wrapper > * {
-  padding: 10px;
-  flex: 1 100%;
-}
-.circle-l {
-  background: #000;
-  display: flex;
-  justify-content: center;
-  padding: 100px 20px;
-  margin-right: 2px;
-}
-.square-r {
-  background: #000;
-  display: flex;
-  justify-content: center;
-  padding: 100px 20px;
-  margin-left: 2px;
-}
-@media (max-width:800px) {
-  .circle-l, .square-r {margin: 2px 0px;}
-}
-@media all and (min-width: 800px) {
-  .shape { flex: 1 0 0; }
+.circle-wrapper {
+  background-image: url("images/circle-bg.jpg");
+  height: 500px;
 }
 .circle {
   border: 15px solid #fff;
   border-radius: 50%;
   height: 250px;
   width: 250px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  color: #fff;
+  transition: .5s ease;
+}
+.circle:hover {
+  transition: .5s ease;
+  border-radius: 0;
+}
+.square-wrapper {
+  background-image: url("images/square-bg.jpg");
+  height: 500px;
 }
 .square {
   border: 15px solid #fff;
   height: 250px;
   width: 250px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  color: #fff;
+  padding: 100px;
+  position: relative;
+  padding: 3px;
+  transition: .5s ease;
 }
-.shape-hyperlink a {
+.square:hover {
+  border-radius: 50%;
+  transition: .5s ease;
+}
+.shapes a {
+  text-decoration: none;
+}
+h2.shape-hyperlink {
 text-decoration: none;
+text-align: center;
 background: linear-gradient(to right, #f61f2c 0%, #fdd000 50%, #84dc51 100%);
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.shape-hyperlink a:hover {
-  background: linear-gradient(to right, #84dc51 0%, #fdd000 50%, #f61f2c 100%);
+h2.shape-hyperlink:hover {
+    background: linear-gradient(to right, #84dc51 0%, #fdd000 50%, #f61f2c 100%);
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -359,17 +350,16 @@ div.contact-form  {
   border: none;
 }
 .contact-form button{
-  background-color:black;
-  color:#f61f2c;
-  border-style:none;
-  padding:20px;
-  margin:10px;
-  font-family:montserrat;
-  text-transform:uppercase;
-  font-weight:600;
-  font-size:20px;
+  text-align: center;
+  font-family: montserrat;
+  font-weight: 700;
+  padding: 15px 20px;
+  border: none;
+  background-color: #f61f2c; 
+  color: black;
+  margin-top: 30px;
 }
 .contact-form button:hover {
-  background-color:#f61f2c;
-  color: black;
+  background-color: black;
+  color: white;
 }
