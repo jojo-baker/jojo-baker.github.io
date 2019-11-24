@@ -295,7 +295,7 @@ h4.portfolio-card-title {
 }
 
 .about-right-image {
-  background-image: url("images/placeholder-about.jpg");
+  background-image: url("images/jo-about.jpg");
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -305,6 +305,9 @@ h4.portfolio-card-title {
   justify-content: space-between;
   align-items: center;
   margin-left: 100px;
+}
+.about-image img {
+  max-width: 400px;
 }
 
 @media all and (min-width: 900px) {
@@ -362,4 +365,37 @@ div.contact-form  {
 .contact-form button:hover {
   background-color: black;
   color: white;
+}
+
+/* Portfolio item page */
+.portolfio-item-container {
+  margin-top: 50px;
+}
+.portfolio-item-image img {
+  width: 100%;
+  padding: 20px;
+}
+.portfolio-item-info {
+  padding: 20px;
+}
+.tech {
+
+}
+.mock-images {
+  display: flex;
+  justify-content: center;
+  margin: 50px 20px;
+}
+.mock-images img {
+  max-width: 500px;
+  display: block;
+}
+@media (max-width:768px) {
+  .mock-images img {
+    max-width: 80vw;
+  }
+}
+.weather-mocks {
+  display: flex;
+  justify-content: center;
 }
